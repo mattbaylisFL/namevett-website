@@ -114,10 +114,47 @@
         <h2>Privacy first</h2>
         <p>
             NameVett does not collect any personal data. Searches stay on your device. Your name query
-            is sent only to the public services it checks against (USPTO, EUIPO, iTunes Search, RDAP, social
-            platforms, our own web-search proxy). None of those services receive any user identifier.
+            is sent only to the public services it checks against (USPTO, EUIPO, iTunes Search, RDAP,
+            and the five social platforms). None of those services receive any user identifier.
             <a href="privacy.html">Read the full privacy policy →</a>
         </p>
+    </section>
+
+    <section class="strip" id="support">
+        <h2>Support</h2>
+        <p>NameVett is a single-purpose, single-developer app. Common questions are answered below — most issues are settled here without anyone needing to be in the loop.</p>
+
+        <div class="faq">
+            <details>
+                <summary>I paid for the unlock but my report is still locked.</summary>
+                <p>Open <strong>Settings → Restore Purchase</strong> inside the app. StoreKit re-checks Apple's records using the same Apple ID you bought with and re-applies the entitlement. If you're signed into a different Apple ID than the one used at purchase, sign back into the original one first.</p>
+            </details>
+
+            <details>
+                <summary>The trademark search returned "Couldn't reach USPTO."</summary>
+                <p>USPTO's public trademark site is rate-limited at the network edge and occasionally blocks bursts of automated requests. NameVett shows a <strong>"Search USPTO directly"</strong> button when this happens, which opens USPTO's own search page in Safari with your name pre-filled. Try again in a few minutes if you'd rather see the results inside the app.</p>
+            </details>
+
+            <details>
+                <summary>The AI Summary, Sounds &amp; Meaning, or Alternatives card is missing.</summary>
+                <p>Those cards run on Apple's on-device Foundation Models. They appear only on iPhones that support Apple Intelligence, with Apple Intelligence enabled in <strong>Settings → Apple Intelligence &amp; Siri</strong>, after the on-device model has finished downloading. Older devices will see the rest of the report normally.</p>
+            </details>
+
+            <details>
+                <summary>I want a refund.</summary>
+                <p>All purchases go through Apple. Request a refund at <a href="https://reportaproblem.apple.com/" rel="noopener">reportaproblem.apple.com</a> — Apple processes refunds for the App Store directly. NameVett does not see your payment information and cannot refund through any other channel.</p>
+            </details>
+
+            <details>
+                <summary>How is my data handled?</summary>
+                <p>Nothing leaves your device beyond the search query itself, which is sent to the public APIs listed in the <a href="privacy.html">Privacy Policy</a>. No accounts, no analytics, no advertising IDs. NameVett does not run a server.</p>
+            </details>
+
+            <details>
+                <summary>Found a bug or have a feature suggestion?</summary>
+                <p>Submit it through Apple's <strong>App Store review</strong> on the app's listing — every review gets read, and feature requests pulled from reviews go into the next release notes. Reviews are also the most useful place to flag a bug since they include your device + iOS version automatically.</p>
+            </details>
+        </div>
     </section>
 
     <section class="strip cta-strip" id="download">
@@ -131,10 +168,10 @@
         <div class="footer-row">
             <div>
                 <strong>NameVett</strong><br>
-                © 2026 — Built for founders<br>
-                <a href="mailto:support@namevett.app">support@namevett.app</a>
+                © 2026 — Built for founders
             </div>
             <div>
+                <a href="#support">Support</a><br>
                 <a href="privacy.html">Privacy Policy</a><br>
                 <a href="terms.html">Terms of Service</a><br>
                 <a href="https://apps.apple.com/app/id6766226182" rel="noopener">App Store</a>
