@@ -1,0 +1,435 @@
+/* NameVett marketing site — minimal, dark, single accent.
+   Hosted as static HTML on GitHub Pages.
+
+   Design rules:
+   - One accent (warm amber) matching the app icon
+   - Dark navy gradient background, same family as the app surface
+   - Big, readable type — founders skim
+   - No tracking, no third-party fonts (system stack only) */
+
+:root {
+    --accent:      #f0b846;
+    --accent-dark: #d28e28;
+    --bg-top:      #18203a;
+    --bg-bottom:   #0a0e18;
+    --text:        #f5f6fa;
+    --text-dim:    #a8aebc;
+    --text-faint:  #6b7080;
+    --card:        rgba(255, 255, 255, 0.04);
+    --card-border: rgba(255, 255, 255, 0.07);
+    --max-width:   1080px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 120ms ease;
+}
+
+a:hover { color: var(--accent-dark); }
+
+/* ---------- Hero ---------- */
+
+.hero {
+    padding: 24px 24px 100px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 56px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.3px;
+}
+
+.brand img {
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--text-dim);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.hero-content {
+    max-width: 760px;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.lead {
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--text-dim);
+    margin-bottom: 32px;
+    max-width: 640px;
+}
+
+.cta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.cta-meta {
+    color: var(--text-faint);
+    font-size: 14px;
+}
+
+.hero-meta {
+    margin-top: 24px;
+    color: var(--text-faint);
+    font-size: 14px;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 100ms ease, box-shadow 120ms ease;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #1a1209;
+    box-shadow: 0 8px 22px rgba(240, 184, 70, 0.25);
+}
+
+.btn-primary:hover {
+    color: #1a1209;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 26px rgba(240, 184, 70, 0.35);
+}
+
+.btn-large {
+    font-size: 18px;
+    padding: 16px 28px;
+    border-radius: 14px;
+}
+
+/* ---------- Strips ---------- */
+
+.strip {
+    padding: 80px 24px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.strip h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    letter-spacing: -0.6px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.15;
+}
+
+.strip.alt {
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.015);
+    border-top: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
+}
+
+.strip.alt > * {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Feature grid ---------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 22px 22px 20px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.2px;
+}
+
+.card p {
+    color: var(--text-dim);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card.glow {
+    background: linear-gradient(180deg, rgba(240, 184, 70, 0.08), rgba(240, 184, 70, 0.02));
+    border-color: rgba(240, 184, 70, 0.25);
+}
+
+.card.glow h3 {
+    color: var(--accent);
+}
+
+/* ---------- How it works ---------- */
+
+.strip.alt#how {
+    display: block;
+}
+
+#how h2 { padding-top: 80px; padding-left: 24px; }
+
+#how .how-text {
+    padding: 0 24px 0;
+    max-width: var(--max-width);
+}
+
+#how .how-text ol {
+    padding-left: 22px;
+    color: var(--text-dim);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+#how .how-text ol li {
+    margin-bottom: 12px;
+}
+
+#how .how-text ol li strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+#how .how-image {
+    display: none; /* placeholder — drop screenshot in later */
+}
+
+/* ---------- Pricing ---------- */
+
+.price-card {
+    max-width: 460px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    padding: 36px 32px;
+    text-align: center;
+}
+
+.price {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -1.5px;
+}
+
+.price-meta {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.checklist {
+    list-style: none;
+    text-align: left;
+    color: var(--text-dim);
+    font-size: 15px;
+}
+
+.checklist li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+}
+
+.checklist li::before {
+    content: "✓";
+    color: var(--accent);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+}
+
+/* ---------- Privacy strip ---------- */
+
+.privacy-strip p {
+    font-size: 17px;
+    color: var(--text-dim);
+    max-width: 720px;
+}
+
+/* ---------- CTA strip ---------- */
+
+.cta-strip {
+    text-align: center;
+    padding: 100px 24px;
+}
+
+.cta-strip h2 {
+    font-size: clamp(28px, 5vw, 44px);
+    margin-bottom: 12px;
+}
+
+.cta-strip p {
+    color: var(--text-dim);
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    padding: 40px 24px 80px;
+    border-top: 1px solid var(--card-border);
+    color: var(--text-faint);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-row {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+footer a {
+    color: var(--text-dim);
+}
+
+footer a:hover { color: var(--accent); }
+
+/* ---------- Privacy / Terms reading layout ---------- */
+
+.doc {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+}
+
+.doc h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.doc .effective {
+    color: var(--text-faint);
+    margin-bottom: 32px;
+}
+
+.doc h2 {
+    font-size: 22px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.doc h3 {
+    font-size: 17px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.doc p, .doc li {
+    color: var(--text-dim);
+    margin-bottom: 12px;
+}
+
+.doc ul {
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+
+.doc table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.doc th, .doc td {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--card-border);
+    color: var(--text-dim);
+}
+
+.doc th {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.doc-back {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--text-dim);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+    .nav-links { gap: 14px; font-size: 13px; }
+    .hero { padding: 16px 16px 60px; }
+    .strip { padding: 60px 18px; }
+    .footer-row { flex-direction: column; gap: 16px; }
+    .price-card { padding: 28px 22px; }
+    .price { font-size: 44px; }
+}
