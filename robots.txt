@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mattbaylisFL.github.io/namevett-website/sitemap.xml
