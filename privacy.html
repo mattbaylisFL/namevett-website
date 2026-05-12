@@ -34,6 +34,11 @@
 
         <p>The single in-app purchase (Unlock for $1.99) is processed entirely through Apple's StoreKit. Apple, not NameVett, handles all payment information. We never see your payment details.</p>
 
+        <h2>Rewarded ads (optional)</h2>
+        <p>If you choose not to buy the in-app purchase, NameVett also offers a free way to view each search's full results: you can watch a short rewarded ad to unlock one specific search for 24 hours. These ads are served by <a href="https://policies.google.com/technologies/ads" rel="noopener">Google AdMob</a>. We configure every ad request with the <code>npa=1</code> flag, which tells AdMob to serve only <strong>non-personalized</strong> inventory — no targeting based on your interests, no IDFA collection, no cross-app linkage, and no Apple "App Tracking Transparency" prompt. AdMob still collects standard ad-delivery signals (your device model, IP address, ad-request timing) so that ads can render and so that ad networks can count installs via Apple's SKAdNetwork; these signals are not linked to a personal identity.</p>
+        <p>If you'd prefer to never see an ad in NameVett, the $1.99 one-time unlock removes ads entirely and unlocks every search, past and future.</p>
+        <p>If you tap <strong>Register</strong> on an available domain, NameVett opens Namecheap through an Impact.com affiliate link. We earn a small commission if you complete a purchase at Namecheap. Standard Impact.com click tracking applies — see <a href="https://impact.com/privacy-policy/" rel="noopener">Impact.com's privacy policy</a>. No personal data is sent through this link beyond what your browser sends when you visit any third-party site.</p>
+
         <h2>On-device AI features</h2>
         <p>NameVett includes an AI summary, alternative-name suggestions, and a sounds-and-meaning audit. All three run on Apple's on-device Foundation Models (Apple Intelligence). <strong>The on-device AI does not send any data to a server.</strong> Generation happens entirely on your iPhone.</p>
 
@@ -49,7 +54,8 @@
                 <tr><td>Location</td><td>No</td></tr>
                 <tr><td>Search history</td><td>Stored locally only — not collected</td></tr>
                 <tr><td>Payment data</td><td>Handled by Apple, never seen by us</td></tr>
-                <tr><td>Advertising identifiers</td><td>No</td></tr>
+                <tr><td>Advertising identifiers (IDFA)</td><td>No — non-personalized ads only</td></tr>
+                <tr><td>Ad delivery signals (device model, IP, request timing)</td><td>Collected by Google AdMob if you choose to watch a rewarded ad — not linked to identity</td></tr>
             </tbody>
         </table>
 
@@ -61,6 +67,12 @@
             <li>Apple iTunes Search — <a href="https://www.apple.com/legal/privacy" rel="noopener">apple.com/legal/privacy</a></li>
             <li>Verisign / Google Registry / Cloudflare (RDAP &amp; DoH) — operated as ICANN public protocols</li>
             <li>Instagram, TikTok, GitHub, YouTube, Reddit — handle checks hit only the public profile URL</li>
+        </ul>
+        <p>The services below are contacted only if you take a monetization-related action — they never receive your search query:</p>
+        <ul>
+            <li><strong>Google AdMob</strong> — <a href="https://policies.google.com/technologies/ads" rel="noopener">policies.google.com/technologies/ads</a> — only contacted if you tap "Watch ad to unlock". Non-personalized inventory only.</li>
+            <li><strong>Impact.com</strong> (Namecheap affiliate redirect) — <a href="https://impact.com/privacy-policy/" rel="noopener">impact.com/privacy-policy</a> — only contacted if you tap "Register" on an available domain.</li>
+            <li><strong>Apple StoreKit</strong> — payment processing for the one-time $1.99 unlock.</li>
         </ul>
 
         <h2>Apple's standard diagnostics</h2>
