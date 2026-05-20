@@ -3,15 +3,92 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0E1014">
+
     <title>NameVett — Trademark Search, Domain &amp; @handle Clearance for Founders</title>
     <meta name="description" content="One-tap brand-name clearance for indie founders. Free domain availability across 8 TLDs on every search. Unlock the full trademark / App Store / podcast / handle report by watching one ad (24h) or paying $1.99 once for unlimited unlocks. On-device Apple Intelligence summarizes the risk.">
-    <link rel="canonical" href="https://mattbaylisFL.github.io/namevett-website/">
+
+    <link rel="canonical" href="https://mattbaylisfl.github.io/namevett-website/">
+
+    <!-- Apple Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6766226182">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NameVett">
+    <meta property="og:url" content="https://mattbaylisfl.github.io/namevett-website/">
     <meta property="og:title" content="NameVett — Trademark Search">
     <meta property="og:description" content="One-tap brand-name clearance for indie founders. Trademarks, App Store, podcasts, domains, social handles — all in seconds. Free domain checks, $1.99 unlocks everything.">
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mattbaylisfl.github.io/namevett-website/icon.png">
+    <meta property="og:image:alt" content="NameVett app icon">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NameVett — Trademark Search">
+    <meta name="twitter:description" content="One-tap brand-name clearance for indie founders. Trademarks, App Store, podcasts, domains, social handles — all in seconds.">
+    <meta name="twitter:image" content="https://mattbaylisfl.github.io/namevett-website/icon.png">
+
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured data: tells Google this is an iOS productivity tool
+         with free + paid tiers and ties the site to the brand entity. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "MobileApplication",
+                "@id": "https://mattbaylisfl.github.io/namevett-website/#app",
+                "name": "NameVett",
+                "description": "One-tap brand-name clearance for indie founders. Searches US/EU trademark databases, the iOS App Store, Apple Podcasts, eight TLDs, and five social platforms. Apple Intelligence summarizes risk on-device.",
+                "url": "https://mattbaylisfl.github.io/namevett-website/",
+                "applicationCategory": "BusinessApplication",
+                "applicationSubCategory": "Brand Research",
+                "operatingSystem": "iOS 26",
+                "downloadUrl": "https://apps.apple.com/app/id6766226182",
+                "installUrl": "https://apps.apple.com/app/id6766226182",
+                "image": "https://mattbaylisfl.github.io/namevett-website/icon.png",
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "price": "0",
+                        "priceCurrency": "USD",
+                        "name": "Free download — domain checks included"
+                    },
+                    {
+                        "@type": "Offer",
+                        "price": "1.99",
+                        "priceCurrency": "USD",
+                        "name": "Unlock everything (one-time, no subscription)"
+                    }
+                ],
+                "publisher": { "@id": "https://mattbaylisfl.github.io/namevett-website/#org" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://mattbaylisfl.github.io/namevett-website/#org",
+                "name": "NameVett",
+                "url": "https://mattbaylisfl.github.io/namevett-website/",
+                "logo": "https://mattbaylisfl.github.io/namevett-website/icon.png",
+                "sameAs": [
+                    "https://apps.apple.com/app/id6766226182"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://mattbaylisfl.github.io/namevett-website/#website",
+                "name": "NameVett",
+                "url": "https://mattbaylisfl.github.io/namevett-website/",
+                "publisher": { "@id": "https://mattbaylisfl.github.io/namevett-website/#org" },
+                "inLanguage": "en-US"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header class="hero">
@@ -199,6 +276,11 @@
                 <a href="https://apps.apple.com/app/id6766226182" rel="noopener">App Store</a>
             </div>
         </div>
+        <p class="footer-aside">
+            More tools for makers tired of feeds:
+            <a href="https://mattbaylisfl.github.io/slowsocialweb" rel="noopener">Slow Social</a>
+            — dial-up-era social media for people who'd rather not be optimized.
+        </p>
     </footer>
 </body>
 </html>

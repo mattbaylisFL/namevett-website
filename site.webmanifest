@@ -1,0 +1,25 @@
+{
+    "name": "NameVett",
+    "short_name": "NameVett",
+    "description": "One-tap brand-name clearance for indie founders. Trademarks, App Store, podcasts, domains, and social handles in seconds.",
+    "start_url": "./",
+    "display": "browser",
+    "theme_color": "#0E1014",
+    "background_color": "#0E1014",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "itunes",
+            "url": "https://apps.apple.com/app/id6766226182",
+            "id": "6766226182"
+        }
+    ],
+    "prefer_related_applications": true
+}

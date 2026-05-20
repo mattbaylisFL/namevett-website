@@ -1,0 +1,17 @@
+# NameVett
+
+> One-tap brand-name clearance for indie founders, indie devs, and small teams mid-decision. Searches US (USPTO) and EU (EUIPO) trademark databases, the iOS App Store, Apple Podcasts, eight domain TLDs (.com, .net, .org, .app, .io, .co, .dev, .ai), and five social platforms (Instagram, TikTok, GitHub, YouTube, Reddit). Apple Intelligence summarizes overall risk on-device.
+
+NameVett's mechanic: type a name, watch six sources run concurrently. Domain availability is always free across all eight TLDs (no unlock required). Trademark, App Store, podcast, social-handle, and AI-summary cards unlock via one of two paths: (1) watch a single rewarded ad to unlock one search for 24 hours, or (2) pay $1.99 once to unlock every past and future search forever with no ads.
+
+Privacy: searches stay on-device. Queries are sent only to the public APIs each card represents (USPTO, EUIPO, iTunes Search, RDAP, the social platforms). No accounts, no analytics, no IDFA collection, no tracking prompt. Rewarded ads are non-personalized via Google AdMob.
+
+## Key pages
+
+- [Home](https://mattbaylisfl.github.io/namevett-website/): Features, pricing, how-it-works, privacy summary, FAQ.
+- [Privacy policy](https://mattbaylisfl.github.io/namevett-website/privacy.html)
+- [Terms of service](https://mattbaylisfl.github.io/namevett-website/terms.html)
+
+## Apps
+
+- [NameVett on the App Store](https://apps.apple.com/app/id6766226182): iPhone & iPad, iOS 26+. Free download, $1.99 one-time unlock for everything.
