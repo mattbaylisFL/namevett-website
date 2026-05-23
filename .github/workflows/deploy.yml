@@ -1,0 +1,36 @@
+name: Ping IndexNow
+
+# GitHub Pages itself deploys this repo via the legacy "branch /" source
+# (configured in repo Settings → Pages). This workflow runs in parallel
+# on every push to main, waits for the Pages deploy to finish, then
+# notifies IndexNow that the sitemap has changed.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: "indexnow"
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Give the legacy Pages builder a head start before we ping —
+      # IndexNow's crawler will fetch keyLocation + each URL, and we
+      # want the freshly-deployed pages to be live by then.
+      - name: Wait for Pages deploy
+        run: sleep 60
+
+      - name: Ping IndexNow
+        run: node tools/ping-indexnow.mjs
