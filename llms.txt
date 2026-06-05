@@ -14,4 +14,4 @@ Privacy: searches stay on-device. Queries are sent only to the public APIs each 
 
 ## Apps
 
-- [NameVett on the App Store](https://apps.apple.com/app/id6766226182): iPhone & iPad, iOS 26+. Free download, $1.99 one-time unlock for everything.
+- [NameVett on the App Store](https://apps.apple.com/app/apple-store/id6766226182?pt=126909568&ct=namevettghpweb&mt=8): iPhone & iPad, iOS 26+. Free download, $1.99 one-time unlock for everything.
