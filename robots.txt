@@ -1,4 +1,7 @@
 User-agent: *
+# Content Signals (contentsignals.org) — AI assistants may index this site
+# and use it in generated answers (RAG); AI-training use is reserved.
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 Sitemap: https://mattbaylisFL.github.io/namevett-website/sitemap.xml
