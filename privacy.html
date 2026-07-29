@@ -17,7 +17,7 @@
         <p class="effective"><strong>Effective:</strong> May 2026 · <strong>App:</strong> NameVett (com.namevett.app)</p>
 
         <h2>Plain English</h2>
-        <p>NameVett does not collect any personal data.</p>
+        <p>NameVett does not collect any personal data. The only thing it collects at all is optional, anonymous usage and crash diagnostics - explained below, with an off switch in Settings.</p>
 
         <p>When you run a search, the name you typed is sent to several public services to perform the clearance check:</p>
         <ul>
@@ -39,6 +39,13 @@
         <p>If you'd prefer to never see an ad in NameVett, the $1.99 one-time unlock removes ads entirely and unlocks every search, past and future.</p>
         <p>If you tap <strong>Register</strong> on an available domain, NameVett opens Namecheap through an Impact.com affiliate link. We earn a small commission if you complete a purchase at Namecheap. Standard Impact.com click tracking applies — see <a href="https://impact.com/privacy-policy/" rel="noopener">Impact.com's privacy policy</a>. No personal data is sent through this link beyond what your browser sends when you visit any third-party site.</p>
 
+        
+        <h2>Analytics and crash diagnostics (optional)</h2>
+        <p>NameVett collects <strong>anonymous</strong> usage statistics and crash reports through Google Firebase (Analytics and Crashlytics) so we can see which features are used and fix crashes. This never includes your search queries, never uses the advertising identifier (IDFA), and involves no tracking across other apps or sites. In the EU, UK and Switzerland this collection is <strong>off unless you opt in</strong> when asked; everywhere else it is on by default and you can turn it off at any time in Settings &gt; Privacy &gt; "Share anonymous usage data". Google acts as our processor for this data - see <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy</a>.</p>
+
+        <h2>Promos for our other apps</h2>
+        <p>Reports unlocked with a rewarded ad may show a small promo card for another of our own apps, labeled "Ad &middot; Embay". These are first-party promos: no advertising SDK renders them, no advertising identifier is used, and no data about you is collected or shared to show them. The one-time unlock removes every ad, including these.</p>
+
         <h2>On-device AI features</h2>
         <p>NameVett includes an AI summary, alternative-name suggestions, and a sounds-and-meaning audit. All three run on Apple's on-device Foundation Models (Apple Intelligence). <strong>The on-device AI does not send any data to a server.</strong> Generation happens entirely on your iPhone.</p>
 
@@ -49,8 +56,8 @@
             </thead>
             <tbody>
                 <tr><td>Personal identifiers (name, email, phone)</td><td>No</td></tr>
-                <tr><td>Usage analytics</td><td>No</td></tr>
-                <tr><td>Crash logs (custom)</td><td>No</td></tr>
+                <tr><td>Usage analytics</td><td>Anonymous only, via Firebase - optional, opt-out in Settings (off by default in the EU). Never includes searches.</td></tr>
+                <tr><td>Crash reports</td><td>Anonymous, via Firebase Crashlytics - same controls as usage analytics.</td></tr>
                 <tr><td>Location</td><td>No</td></tr>
                 <tr><td>Search history</td><td>Stored locally only — not collected</td></tr>
                 <tr><td>Payment data</td><td>Handled by Apple, never seen by us</td></tr>
